@@ -1,0 +1,43 @@
+Short notes based on tutorials found at wiki.ros.org/ROS/Tutorials
+
+-----------------------------------------------------------
+ROS Tools:
+- rospack <find/depends1/..>
+- roscd
+- rosls
+
+- rosnode <list/info/ping/..>
+- rosrun <package> <node> [--name:=turtle]
+- rostopic <-h/bw/echo/hz/list/pub/type>
+- rosmsg show
+
+- rosservice <list/call/type/find/uri>
+- rosparam <set/get/load/dump/delete/list>
+-----------------------------------------------------------
+
+Package Stuff: /<your-workspace>/src/<package>
+- catkin_create_pkg <package_name> [depend1] [depend2] [depend3]
+- catkin_make builds ALL packages in the workspace.
+- Need to source devel/setup.bash to add to ROS environment
+- package.xml has license, maintainer, and dependency info
+
+ROS:
+- Nodes, Messages, Topics. 
+- Use rqt_graph to visualize everything that's going on
+
+Nodes:
+- Executable within a package
+- Publish/subscribe to topics, provide/use services
+- Python (rospy) or C++ (roscpp)
+
+Topics:
+- Class of messages, has a type
+- Can publish, view, check type from the command line
+- Use rqt_plot to plot data published on a topic
+
+Services:
+- Kind of like a request? Can get responses
+- Directed communication
+
+Parameters:
+- Adjustable node settings

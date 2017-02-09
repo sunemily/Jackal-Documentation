@@ -1,0 +1,15 @@
+Weekly goals/progress report for Emily and Raghava:
+
+Week 1 (2/1):
+- (Goal) Go through 10 more tutorials
+- Emily: Done
+- Raghava: 3/10 done. Pushed b/c of career fair
+
+Week 2 (2/8):
+- (Goal) Try to move the Jackal on Gazebo, emulate lidar data
+- Got two linux machines running in the lab!
+- Emily:
+- Raghava:
+
+Week 3 (2/15):
+- 
