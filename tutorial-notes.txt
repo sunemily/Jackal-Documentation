@@ -5,6 +5,7 @@ ROS Tools:
 - rospack <find/depends1/..>
 - roscd
 - rosls
+- rosed <package> <filename>
 
 - rosnode <list/info/ping/..>
 - rosrun <package> <node> [--name:=turtle]
@@ -13,6 +14,8 @@ ROS Tools:
 
 - rosservice <list/call/type/find/uri>
 - rosparam <set/get/load/dump/delete/list>
+
+- roslaunch <package> <filename.launch>
 -----------------------------------------------------------
 
 Package Stuff: /<your-workspace>/src/<package>
@@ -24,6 +27,8 @@ Package Stuff: /<your-workspace>/src/<package>
 ROS:
 - Nodes, Messages, Topics. 
 - Use rqt_graph to visualize everything that's going on
+- Use rqt_console to log and view all debugging messages
+- Use rqt_logger_levels to filter data being sent to rqt_console
 
 Nodes:
 - Executable within a package
@@ -41,3 +46,27 @@ Services:
 
 Parameters:
 - Adjustable node settings
+
+ROS Launch:
+- Starts multiple nodes at once
+- As defined in *.launch in /launch in the package folder
+- Looks like XML, begins and ends with launch tags
+
+Message and Service Files:
+- Stored in /msg or /srv directories within a package
+- msg: one field type and field name per line. eg:
+    Header header
+    string child_frame_id
+    geometry_msgs/PoseWithCovariance pose
+    geometry_msgs/TwistWithCovariance twist
+- srv: msg (request) \n --- \n msg (response). Both in the same file, separate by a ---
+    int64 A
+    int64 B
+    ---
+    int64 sum
+- To build msg and src files, add: 
+  - message_generation and message_runtime as build and runtime dependencies in package.xml
+  - message_generation to the list of COMPONENTS in CMakeLists.txt
+  - message_runtime to CATKIN_DEPENDS in CMakeLists.txt
+  - Uncomment and edit generate_messages(), add_message_files() and add_service_files() in CMakeLists.txt
+
