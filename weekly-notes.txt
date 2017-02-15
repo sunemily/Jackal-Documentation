@@ -13,7 +13,7 @@ Week 2 (2/8):
     (https://github.com/jackal/jackal)
   - Clearpath tutorial for navigating and making a map. 
   - Publish simple ROS message from terminal that translate to movement in Gazebo. 
-  - Will work on simple publisher and subscriber node throughout week. 
+  - Created simple publisher node that randomly moves Jackal in Gazebo.  
 - Raghava:
  - Did many more tutorials.
  - Got the data from the LMS111 lidar on the Jackal
