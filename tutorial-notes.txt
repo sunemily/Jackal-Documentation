@@ -64,9 +64,9 @@ Message and Service Files:
     int64 B
     ---
     int64 sum
-- To build msg and src files, add: 
+- To build msg and src files: 
   - message_generation and message_runtime as build and runtime dependencies in package.xml
   - message_generation to the list of COMPONENTS in CMakeLists.txt
   - message_runtime to CATKIN_DEPENDS in CMakeLists.txt
   - Uncomment and edit generate_messages(), add_message_files() and add_service_files() in CMakeLists.txt
-
+  - catkin_make install

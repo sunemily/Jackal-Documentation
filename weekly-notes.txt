@@ -10,6 +10,15 @@ Week 2 (2/8):
 - Got two linux machines running in the lab!
 - Emily:
 - Raghava:
+ - Did many more tutorials.
+ - Got the data from the LMS111 lidar on the Jackal
+ - roslaunch jackal_gazebo jackal_world.launch config:=front_laser
+ - Add /front/scan to rviz, or read it using the cmd-tool: rostopic echo/hz
+ - Can similarly simulate bumblebee2 and flea3 cameras, using different config
+   arguments.
+ - jackal_navigation was not installed together with jackal-desktop for some reason.
+   This is required for gmapping demos, and cna be installed by running: sudo apt-get
+   install ros-indigo-jackal-navigation
 
 Week 3 (2/15):
 - 
