@@ -26,4 +26,5 @@ Week 2 (2/8):
    install ros-indigo-jackal-navigation
 
 Week 3 (2/15):
-- 
+- (Goal): Generate wavepoints/path using A*, input wavepoints into Controller and have Jackal move from point A to B.
+- (Bonus): Visualization of path in rviz. 
