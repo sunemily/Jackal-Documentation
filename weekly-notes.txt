@@ -25,6 +25,11 @@ Week 2 (2/8):
    This is required for gmapping demos, and cna be installed by running: sudo apt-get
    install ros-indigo-jackal-navigation
 
+(Meeting Notes)
+ - Modify Gazebo model later. Work with Sick LMS111 for now
+ - Work on planning, control
+ - Meet Brian and Yutao Friday
+
 Week 3 (2/15):
 - (Goal): Generate wavepoints/path using A*, input wavepoints into Controller and have Jackal move from point A to B.
 - (Bonus): Visualization of path in rviz. 
