@@ -33,3 +33,11 @@ Week 2 (2/8):
 Week 3 (2/15):
 - (Goal): Generate wavepoints/path using A*, input wavepoints into Controller and have Jackal move from point A to B.
 - (Bonus): Visualization of path in rviz. 
+- Emily 
+  - Simple package that sends goal using move_base
+  - Ran into issues with not initializing the navstack
+  - Will create own launch file that initializes navstack on gazebo startup
+- Raghava
+
+Week 4 (2/22):
+- (Goal): Same as last week -- integrate A* and move_base 
