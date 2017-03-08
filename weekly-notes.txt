@@ -41,3 +41,16 @@ Week 3 (2/15):
 
 Week 4 (2/22):
 - (Goal): Same as last week -- integrate A* and move_base 
+
+Week 5 (3/1):
+- (Goal): Create wiki page for general gazebo setup. Figure out logging and mount hokuyo in gazebo.
+- Emily
+  - Crtl-D to start recording in gazebo
+  - All logs by default go to ~/.gazebo/log
+  - Playback: open gazebo in playback mode (gazebo -u -p <log file>)
+  - Can filter log files (gzlog <log file> --filter <information you want to see, eg. pose>)
+  - Can also use gzlog to output state information at a simulation time (eg. 30 Hz) (-z 30)
+  - http://gazebosim.org/tutorials?tut=log_filtering&cat=tools_utilities
+  - Logging in ROS using rosbag (rosbag record -O <rosbag file path> <rostopics>), Crtl-C to stop recording 
+  - http://wiki.ros.org/ROS/Tutorials/Recording%20and%20playing%20back%20data
+  
