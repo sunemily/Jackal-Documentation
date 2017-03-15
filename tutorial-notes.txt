@@ -70,3 +70,33 @@ Message and Service Files:
   - message_runtime to CATKIN_DEPENDS in CMakeLists.txt
   - Uncomment and edit generate_messages(), add_message_files() and add_service_files() in CMakeLists.txt
   - catkin_make install
+
+URDF Files:
+- Source: http://wiki.ros.org/urdf/Tutorials
+- Tree structure with one root link (part) called "base_link"
+- All parts of the robot are connected heirarchically to the root through a set of joints => automatically
+  converted to TF publishers.
+- <link>:
+    <visual>
+      <geometry> -- box/sphere/cylindrical/mesh (3D model)
+      <material> -- color
+      <origin>
+    <collision>
+      <geometry> -- (make this simpler than the visual mesh)
+      <origin>
+    <inertial>
+      <mass>
+      <inertia matrix>
+- <joint> -- type (fixed, prismatic, revolute, continuous, planar, floating)
+    <parent link>
+    <child link>
+    <origin>
+- Xacro: provides macros, constants etc. to simplify robot description
+  - <xacro:property name="" value="" /> -- specify named constants
+  - ${abc} -- refer to constants, can do simple math (+-/*) too
+  - <xacro:macro name="" params=""> ... </xacro:macro> -- parametrize link/joint
+
+  URDF in Gazebo:
+  - Can add <gazebo> elements to links, joints and robots
+  - <gazebo reference="name"> ... </gazebo>
+
