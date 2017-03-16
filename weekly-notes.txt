@@ -53,4 +53,11 @@ Week 5 (3/1):
   - http://gazebosim.org/tutorials?tut=log_filtering&cat=tools_utilities
   - Logging in ROS using rosbag (rosbag record -O <rosbag file path> <rostopics>), Crtl-C to stop recording 
   - http://wiki.ros.org/ROS/Tutorials/Recording%20and%20playing%20back%20data
-  
+ - Raghava
+  - Two options to add to Jackal URDF:
+   - Set JACKAL_URDF_EXTRAS to point to your URDF file
+   - Create new package for robot, wrapping one in 'jackal_description'
+
+Weeks 6 and 7 (3/7):
+- (Goal): Modify Jackal URDF, create new world in Gazebo -- tutorials too
+
