@@ -99,4 +99,13 @@ URDF Files:
   URDF in Gazebo:
   - Can add <gazebo> elements to links, joints and robots
   - <gazebo reference="name"> ... </gazebo>
+  
+  Creating own World in Gazebo:
+  - http://wiki.ros.org/cob_gazebo_worlds/Tutorials/Create%20your%20own%20world
+  - Model own world/obstacles/objects in Google Sketchup. 
+    This creates a .dae file, which are the visual models that make up your world. 
+  - Save all media files in <folder name>/Media/models/<object>.dae
+  - World file will be saived inside <folder name>/world/<worldname>.world
+  - The .dae files will be called in the world file
+  - The launch file inside <folder name>/launch calls the world file upon Gazebo startup
 
