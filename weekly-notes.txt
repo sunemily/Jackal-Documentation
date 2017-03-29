@@ -61,3 +61,6 @@ Week 5 (3/1):
 Weeks 6 and 7 (3/7):
 - (Goal): Modify Jackal URDF, create new world in Gazebo -- tutorials too
 
+Week 9 and 10:
+- (Goal): Add cones and walls to Gazebo world
+- (Goal): Navigate w/ Hokuyo in the new world
